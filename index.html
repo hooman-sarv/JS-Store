@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Book Store</title>
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    </head>
+    <body>
+        <h1 class="header">Book Store</h1>
+        <input type="text" id="search-products" placeholder="Search...">
+        <label>
+            <input type="checkbox" id="available-products"> Available Products
+        </label>
+        <select id="sort">
+            <option value="byEdited">By Edited</option>
+            <option value="byCreated">By Created</option>
+        </select>
+        <form id="add-product-form">
+            <input id="productTitle" type="text" name="productTitle" placeholder="Add Product...">
+            <input id="productPrice" type="text" name="productPrice" placeholder="Add Price...">
+            <button id="add-product-btn">Add Product</button>
+        </form>
+
+        <div id="products"></div>
+
+        <script src="./scripts/moment.js"></script>
+        <script src="./scripts/jalali-moment.js"></script>
+        <script src="./scripts/uuid.js"></script>
+        <script src="./scripts/functions.js"></script>
+        <script src='./scripts/app.js'></script>
+    </body>
+</html>
